@@ -1,0 +1,6 @@
+framework module Pods_MyDNC {
+  umbrella header "Pods-MyDNC-umbrella.h"
+
+  export *
+  module * { export * }
+}

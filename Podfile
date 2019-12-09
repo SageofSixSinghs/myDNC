@@ -5,6 +5,7 @@ target 'MyDNC' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
 
-  # Pods for MyDNC
+  pod 'SwiftyJSON'
+  pod 'Alamofire', '~> 4.9'
 
 end

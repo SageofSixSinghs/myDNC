@@ -3,18 +3,24 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		487C3F910FA2F72F0FF4F608 /* Pods_MyDNC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B3FCA5AA6A202D212B37772 /* Pods_MyDNC.framework */; };
+		8E1CBFBE239CA358009D40EE /* ArticleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E1CBFBD239CA358009D40EE /* ArticleViewController.swift */; };
 		8E2149BB239A035100EC7178 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2149BA239A035100EC7178 /* AppDelegate.swift */; };
 		8E2149BD239A035100EC7178 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2149BC239A035100EC7178 /* ViewController.swift */; };
 		8E2149C0239A035100EC7178 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E2149BE239A035100EC7178 /* Main.storyboard */; };
 		8E2149C2239A035400EC7178 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8E2149C1239A035400EC7178 /* Assets.xcassets */; };
 		8E2149C5239A035400EC7178 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E2149C3239A035400EC7178 /* LaunchScreen.storyboard */; };
+		8E3ADE65239E4EFA00D03897 /* Articles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E3ADE64239E4EFA00D03897 /* Articles.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0B3FCA5AA6A202D212B37772 /* Pods_MyDNC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyDNC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		48CB0B59D6F0562DB86AB432 /* Pods-MyDNC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyDNC.debug.xcconfig"; path = "Target Support Files/Pods-MyDNC/Pods-MyDNC.debug.xcconfig"; sourceTree = "<group>"; };
+		8E1CBFBD239CA358009D40EE /* ArticleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleViewController.swift; sourceTree = "<group>"; };
 		8E2149B7239A035100EC7178 /* MyDNC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyDNC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E2149BA239A035100EC7178 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8E2149BC239A035100EC7178 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +28,8 @@
 		8E2149C1239A035400EC7178 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8E2149C4239A035400EC7178 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8E2149C6239A035400EC7178 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8E3ADE64239E4EFA00D03897 /* Articles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Articles.swift; sourceTree = "<group>"; };
+		DC73A7D6CA01EEFEB3430405 /* Pods-MyDNC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyDNC.release.xcconfig"; path = "Target Support Files/Pods-MyDNC/Pods-MyDNC.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +37,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				487C3F910FA2F72F0FF4F608 /* Pods_MyDNC.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0C210460FF5D4738F8343BF3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				48CB0B59D6F0562DB86AB432 /* Pods-MyDNC.debug.xcconfig */,
+				DC73A7D6CA01EEFEB3430405 /* Pods-MyDNC.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		44A7C06B3E7E06C08E3E4C26 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0B3FCA5AA6A202D212B37772 /* Pods_MyDNC.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		8E2149AE239A035100EC7178 = {
 			isa = PBXGroup;
 			children = (
 				8E2149B9239A035100EC7178 /* MyDNC */,
 				8E2149B8239A035100EC7178 /* Products */,
+				0C210460FF5D4738F8343BF3 /* Pods */,
+				44A7C06B3E7E06C08E3E4C26 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -55,7 +83,9 @@
 			isa = PBXGroup;
 			children = (
 				8E2149BA239A035100EC7178 /* AppDelegate.swift */,
+				8E3ADE64239E4EFA00D03897 /* Articles.swift */,
 				8E2149BC239A035100EC7178 /* ViewController.swift */,
+				8E1CBFBD239CA358009D40EE /* ArticleViewController.swift */,
 				8E2149BE239A035100EC7178 /* Main.storyboard */,
 				8E2149C1239A035400EC7178 /* Assets.xcassets */,
 				8E2149C3239A035400EC7178 /* LaunchScreen.storyboard */,
@@ -71,9 +101,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8E2149C9239A035400EC7178 /* Build configuration list for PBXNativeTarget "MyDNC" */;
 			buildPhases = (
+				B3108B30EA2AD25E15033773 /* [CP] Check Pods Manifest.lock */,
 				8E2149B3239A035100EC7178 /* Sources */,
 				8E2149B4239A035100EC7178 /* Frameworks */,
 				8E2149B5239A035100EC7178 /* Resources */,
+				7EAAEDCF552E0DC55F12BA45 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -130,12 +162,56 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		7EAAEDCF552E0DC55F12BA45 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MyDNC/Pods-MyDNC-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MyDNC/Pods-MyDNC-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MyDNC/Pods-MyDNC-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B3108B30EA2AD25E15033773 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MyDNC-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		8E2149B3239A035100EC7178 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8E3ADE65239E4EFA00D03897 /* Articles.swift in Sources */,
 				8E2149BD239A035100EC7178 /* ViewController.swift in Sources */,
+				8E1CBFBE239CA358009D40EE /* ArticleViewController.swift in Sources */,
 				8E2149BB239A035100EC7178 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -280,6 +356,7 @@
 		};
 		8E2149CA239A035400EC7178 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 48CB0B59D6F0562DB86AB432 /* Pods-MyDNC.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -298,6 +375,7 @@
 		};
 		8E2149CB239A035400EC7178 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DC73A7D6CA01EEFEB3430405 /* Pods-MyDNC.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
